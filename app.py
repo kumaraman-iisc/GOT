@@ -5,7 +5,7 @@ import numpy as np
 
 api_data = requests.get("https://thronesapi.com/api/v2/Characters").json()
 
-df = pickle.load(open('data.pkl','rb'))
+df = pickle.load(open('https://github.com/campusx-official/game-of-thrones-personality-matcher/blob/main/data.pkl','rb'))
 df = df.head(25)
 
 df['character'] = df['character'].str.replace('Jaime','Jamie')
